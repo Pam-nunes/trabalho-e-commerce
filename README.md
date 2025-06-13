@@ -2,7 +2,7 @@
 
 🍬 Doce Encanto - E-commerce de Doceria
 
-Projeto desenvolvido para a disciplina Programação para Internet, com o objetivo de aplicar os conhecimentos em HTML, CSS, JavaScript e Bootstrap.
+Projeto desenvolvido para a disciplina Programação para Internet do IFES - Campus de Alegre, com o objetivo de aplicar os conhecimentos em HTML, CSS, JavaScript e Bootstrap.
 Trata-se de uma loja virtual fictícia para venda de doces artesanais, oferecendo uma experiência completa de navegação e compra.
 
 ## 🧁 Visão Geral
