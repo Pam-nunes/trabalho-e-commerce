@@ -1,0 +1,435 @@
+/* === MODO ESCURO SUAVE - texto mais escuro para melhor leitura === */
+body.dark {
+  background-color: #787272; /* Fundo cinza escuro suave */
+  color: #ccbcbc; /* Texto cinza muito escuro (quase preto) */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark a {
+  color: #1e150f; /* Azul suave para links, destacado mas confortável */
+}
+
+
+
+body.dark #theme-toggle img {
+  filter: invert(0.8) brightness(1.2);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h6 {
+  color: #e1dada; /* Títulos em tom um pouco mais claro que o texto principal */
+}
+
+body.dark h5{
+color: #333333; 
+}
+
+body.dark main,
+body.dark header,
+body.dark footer,
+body.dark section {
+  background-color: #4d1111; /* Fundo cinza escuro suave */
+  color: #222222;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+
+/* Estilizando o logo */
+/* LOGO */
+.logo {
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(78, 0, 0);
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
+  width: 50px;
+  height: 50px;
+}
+
+/* NAVBAR */
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #5f0101;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white;
+  font-family: exile;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: exile;
+  margin: 0 20px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.btn-faf0e6 {
+  color: white !important; 
+  background-color: #5f0101;
+  border: 2px solid #703c3c;
+  box-shadow: 0 0 3px rgba(151, 130, 130, 0.6);
+}
+
+.btn-faf0e6:hover {
+  background-color: #703c3c;
+  color: white;
+  border-color: #703c3c;
+ 
+}
+
+
+/* CAROUSEL */
+
+
+.carousel-item img {
+  height: 45em;
+  object-fit: cover;
+  object-position: 0 80%;
+  opacity: 85%;
+}
+
+/* BOTÕES ABAIXO DO CAROUSEL */
+.botao {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #5f0101;
+  border-color: #5f0101;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #703c3c;
+  border-color: #703c3c;
+  color: white;
+}
+
+/* TÍTULOS */
+.titulo3 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ESPAÇAMENTO DOS CARDS */
+.cardss {
+  padding: 200px;
+}
+
+/* EFEITO HOVER NOS CARDS */
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoom ao passar o mouse */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostra somente título e preço inicialmente */
+.card-text,
+.card-footer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Revela info extra ao passar o mouse */
+.card:hover .card-text,
+.card:hover .card-footer {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/* Título sempre visível */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a0c0c;
+  margin-bottom: 0;
+}
+
+
+.bg-secondary {
+  background-color: #400000 !important; /* exemplo: final do site, parte dos direitos autorais*/
+}
+
+
+/* mexendo com a pagina contato */
+#form{
+  text-align: center;
+  border: 1px solid #ffffff; /* Borda: 1px de espessura, sólida e preta */
+  padding: 15px;          /* Espaçamento interno */
+  max-width: 500px;       /* Define a largura máxima do formulário */
+  margin: 20px auto;      /* Centraliza o formulário horizontalmente */  
+  border-radius: 25px;  
+  background-color: rgba(255, 255, 255, 0.5); /* branco com 50% de opacidade */
+}
+
+/* --- Estilos para a Imagem de Fundo --- */
+body {
+  background-color: #faf0e6; /* cor bege rosada pastel */
+  margin: 0;
+  padding: 0;
+  /* Garante que o corpo ocupe 100% da altura da viewport */
+  min-height: 100vh;
+  /* Para que o pseudo-elemento possa ser posicionado */
+  position: relative;
+  /* Conteúdo do site acima da imagem de fundo */
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* O caminho para sua imagem 'img/carousel2.jpg' */
+  background-image: url('../img/carousel2.jpg'); /* Caminho corrigido */
+  background-size: cover; /* Cobre toda a área do elemento */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  z-index: -1; /* Coloca a imagem atrás do conteúdo do body */
+  opacity: 85%;
+}
+
+
+
+/* Estilziando o formulario */
+
+/* centralizando */
+#main {
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+  height: 80vh;            /* altura para centralizar verticalmente */
+}
+
+#branco{
+  color: #400000;
+}
+
+/* mudando cor do botao e circunferencia */
+form#form input[type="submit"] {
+  background-color: #5a0707; 
+  color: white;
+  border-radius: 8px;
+}
+
+form#form input[type="submit"]:hover {
+  background-color: white; 
+  color: #400000;
+}
+
+
+/* mexendo na conclusao_pedido.html */
+/* confirmação de pedido*/
+.quadro {
+  border: 2px solid #333;      /* Borda do quadro */
+  padding: 20px;               /* Espaço interno */
+  background-color: #fafafa;   /* Cor de fundo clara */
+  width: 450px;                /* Largura fixa ou % se quiser responsivo */
+  margin: 20px auto;           /* Centraliza horizontalmente */
+  border-radius: 10px;         /* Bordas arredondadas */
+} 
+
+#body_conclusao{
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  flex-direction: column;  /* deixa os elementos em coluna, um abaixo do outro */
+}
+
+/* personalizando os botoes voltar */
+.botoes-voltar a {
+  
+  background-color: #5f0101; 
+  color: white;
+  padding: 10px 20px;          /* Espaçamento interno */
+  margin: 5px;                 /* Espaço entre os botões */
+  border-radius: 5px;          /* Bordas arredondadas */
+  text-decoration: none;       /* Remove sublinhado */
+}
+
+.botoes-voltar a:hover {
+  background-color: #703c3c;  /* Tom mais claro no hover */
+  color: #faf0e6;             /* Texto claro no hover */
+}
+
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+.navbar .navbar-brand {
+    font-size: 24px;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+  .carousel-item img {
+    height: 20em;
+  }
+
+  .cardss {
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+  
+/* comentaarios da Maria*/
+/* Tamanho das fotos nos cards */
+.card {
+  height: 100%;
+  min-height: 440px; /* altura mínima igual para todos */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px; /* altura fixa para a imagem */
+  object-fit: cover; /* garante corte proporcional e mantém o card organizado */
+}
+
+/* Carrinho  */
+*{margin: 0;padding: 0;-webkit-font-smoothing: antialiased;-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;text-shadow: rgba(0,0,0,.01) 0 0 1px}body{font-family: 'Rubik', sans-serif;font-size: 14px;font-weight: 400;background: #E0E0E0;color: #000000}ul{list-style: none;margin-bottom: 0px}.button{display: inline-block;background: #5a0707;border-radius: 5px;height: 48px;-webkit-transition: all 200ms ease;-moz-transition: all 200ms ease;-ms-transition: all 200ms ease;-o-transition: all 200ms ease;transition: all 200ms ease}.button a{display: block;font-size: 18px;font-weight: 400;line-height: 48px;color: #FFFFFF;padding-left: 35px;padding-right: 35px}.button:hover{opacity: 0.8}.cart_section{width: 100%;padding-top: 93px;padding-bottom: 111px}.cart_title{font-size: 30px;font-weight: 500}.cart_items{margin-top: 8px}.cart_list{border: solid 1px #e8e8e8;box-shadow: 0px 1px 5px rgba(0,0,0,0.1);background-color: #fff}.cart_item{width: 100%;padding: 15px;padding-right: 46px}.cart_item_image{width: 133px;height: 133px;float: left}.cart_item_image img{max-width: 100%}.cart_item_info{width: calc(100% - 133px);float: left;padding-top: 18px}.cart_item_name{margin-left: 7.53%}.cart_item_title{font-size: 14px;font-weight: 400;color: rgba(0,0,0,0.5)}.cart_item_text{font-size: 18px;margin-top: 35px}.cart_item_text span{display: inline-block;width: 20px;height: 20px;border-radius: 50%;margin-right: 11px;-webkit-transform: translateY(4px);-moz-transform: translateY(4px);-ms-transform: translateY(4px);-o-transform: translateY(4px);transform: translateY(4px)}.cart_item_price{text-align: right}.cart_item_total{text-align: right}.order_total{width: 100%;height: 60px;margin-top: 30px;border: solid 1px #e8e8e8;box-shadow: 0px 1px 5px rgba(0,0,0,0.1);padding-right: 46px;padding-left: 15px;background-color: #fff}.order_total_title{display: inline-block;font-size: 14px;color: rgba(0,0,0,0.5);line-height: 60px}.order_total_amount{display: inline-block;font-size: 18px;font-weight: 500;margin-left: 26px;line-height: 60px}.cart_buttons{margin-top: 60px;text-align: right}.cart_button_clear{display: inline-block;border: none;font-size: 18px;font-weight: 400;line-height: 48px;color: rgba(0,0,0,0.5);background: #FFFFFF;border: solid 1px #b2b2b2;padding-left: 35px;padding-right: 35px;outline: none;cursor: pointer;margin-right: 26px}.cart_button_clear:hover{border-color: #5a0707;color: #5a0707}.cart_button_checkout{display: inline-block;border: none;font-size: 18px;font-weight: 400;line-height: 48px;color: #fff;padding-left: 35px;padding-right: 35px;outline: none;cursor: pointer;vertical-align: top;}
+
+/* botao carrinho de compras */
+
+#continuarcompra{
+  color: #5f0101 ;
+  text-decoration: none;
+}
+
+/*cores dos titulos*/
+
+#carrinhoh2{
+  color: #ffffff;
+}
+
+
+/* configurações do carrousel MDB bootstrap / depoimentos de clientes*/
+
+
+/* === Estilização do Carrossel de Depoimentos === */
+
+ /* Wrapper geral do carrossel */
+  #testimonialCarousel {
+    max-width: 1000px;         /* Aumenta a largura máxima */
+    width: 100%;               /* Ocupa toda a largura possível */
+    margin: 0 auto;            /* Centraliza */
+    padding: 30px 40px;        /* Espaçamento interno */
+    border-radius: 12px;       /* Cantos arredondados */
+    background-color: #f8f9fa; /* Fundo suave */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra leve */
+  }
+
+  /* Estilização da imagem do avatar */
+  #testimonialCarousel img {
+    border: 4px solid #fff;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  /* Nome do cliente */
+  #testimonialCarousel h5 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  /* Texto do depoimento */
+  #testimonialCarousel p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 10px;
+  }
+
+
+  /* Botões do carrossel */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #ddd;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-size: 60% 60%;
+  }
+
+/* Faz com que a cor branca continue nas letras*/
+.carousel-caption h5,
+.carousel-caption p {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+.carousel-caption h5 {
+  font-size: 1.75rem; /* Aumenta o título */
+}
+
+.carousel-caption p {
+  font-size: 1.45rem; /* Aumenta o parágrafo */
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+
+.navbar .nav-link {
+  font-size: 20px;
+}
+
+/* Garante que nada altere os tamanhos nos estados hover, focus ou active */
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:active {
+  font-size: 30px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link:active {
+  font-size: 20px;
+}
+
+
+/* configurando a pagina sobre */
+
+#loja{
+  text-align: center;
+}
+
+#body_sobre {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#main_sobre{
+  flex: 1;
+}

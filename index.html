@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- Inserindo navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <!-- imagem da logo -->
+      <a href="index.html">
+      <img src="img/logo2.jpg" alt="logo" class="logo">
+      </a>
+
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Doce Encanto</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogo.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+
+            
+               <!-- Botão de alternância de tema -->
+              <button id="theme-toggle" class="btn btn-light ms-2" title="Alternar tema" style="background: none; border: none;">
+              <img src="img/brightness_9221506.png" alt="Alternar tema" width="24" height="24">
+              </button>
+            
+          </ul>
+
+          <form class="d-flex align-items-center" role="search">
+            <a href="carrinho.html" class="me-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/5381/5381441.png" width="25px" height="25px" alt="Carrinho de Compras" /></a>  
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-faf0e6" >Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <!-- sessão de implementação do carousel -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/carousel1.jpg" class="d-block w-100" alt="bombom">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cultura e Tradição.</h5>
+              <p>Sempre prezando pela expêriencia dos nossos clientes.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/carousel2.jpg" class="d-block w-100" alt="cupcake">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sabores que acolhem!</h5>
+              <p>Feitos à mão, com ingredientes nobres e delicadeza em cada detalhe.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel3.jpg" class="d-block w-100" alt="rosquinha">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mais que doces, memórias!</h5>
+              <p>Nossa história é feita de laços e tradição.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    
+
+    <section class="cardss">
+    <h3 class="titulo3"> - Mais vendidos - </h3>
+    <br>
+    <br>
+
+      <!-- sessão de cards do site -->
+     <!-- Linha 1: 4 cards -->
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/47/7e/fb/477efb1d42611f4118b9ff362db1634e.jpg class="card-img-top img-boloM" alt="BoloM">
+            <div class="card-body">
+              <h5 class="card-title">Bolo Sensação <span class="preco"> -R$ 180,00</span></h5>
+              <p class="card-text">Nosso Bolo de Morango com Brigadeiro une o frescor da fruta à cremosidade do chocolate. A massa macia envolve camadas generosas de brigadeiro artesanal e morangos frescos.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/38/44/f3/3844f3f1ad1c023d63691378db231880.jpg" class="card-img-top" alt="Bolo">
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Cereja<span class="preco"> -R$ 150,00</span></h5>
+              <p class="card-text">Com massa leve, recheio cremoso e cerejas selecionadas, com o toque de baunilha realça a doçura natural da fruta.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=" https://i.pinimg.com/736x/3a/70/13/3a7013155b56226eb43464b548535f24.jpg " class="card-img-top" alt="BoloP">
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Churros<span class="preco"> -R$ 120,00</span></h5>
+              <p class="card-text">Massa delicadamente aromatizada com canela, recheada com doce de leite cremoso.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/3e/c6/61/3ec661686ad40a86d750afb8e2d2ec75.jpg" class="card-img-top" alt="TortaC">
+            <div class="card-body">
+              <h5 class="card-title">Torta de Cereja<span class="preco"> -R$ 120,00</span></h5>
+              <p class="card-text">Massa amanteigada e crocante, recheio generoso de cerejas frescas, levemente aciduladas e envoltas em calda artesanal.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha 2: mais 4 cards -->
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/39/4c/2b/394c2bfda77726f0044394ed537d1b6c.jpg class="card-img-top" alt="CupB">
+            <div class="card-body">
+              <h5 class="card-title">Blueberry<span class="preco"> -R$ 85,00</span></h5>
+              <p class="card-text">A massa leve e aromática derrete na boca, enquanto os pedaços de blueberry oferecem uma explosão sutil de sabor. Finalizado com uma cobertura cremosa e um toque de raspas de limão .</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=" https://i.pinimg.com/736x/7f/e7/92/7fe792eb461d94ab96d8257daf79a6b1.jpg" class="card-img-top" alt="BbF">
+            <div class="card-body">
+              <h5 class="card-title">Trufa Framboesa<span class="preco"> -R$ 50,00</span></h5>
+              <p class="card-text">Com casquinha de chocolate finamente moldada, revela um recheio sedoso e levemente ácido, equilibrado com maestria. A framboesa fresca confere um toque vibrante e elegante.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/51/61/d2/5161d2fb7eed5186a4d410fb11e14de2.jpg class="card-img-top" alt="MS">
+            <div class="card-body">
+              <h5 class="card-title">Macarons Variés<span class="preco"> -R$ 80,00</span></h5>
+              <p class="card-text">Com casquinhas crocantes por fora e interior macio, cada unidade é recheada com ganaches e cremes finamente preparados. </p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/9f/ad/79/9fad790922a74a57127a46bfd783b38c.jpg class="card-img-top" alt="PM">
+            <div class="card-body">
+              <h5 class="card-title">Morango Dourado<span class="preco"> -R$ 50,00</span></h5>
+              <p class="card-text">Preparada com massa delicadamente dourada, é servida com morangos frescos e suculentos, que contrastam suavemente com o toque adocicado da calda artesanal. Um leve toque de chantilly ou creme acompanha.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <h3 class="titulo3"> - Novidades - </h3>
+      <br>
+      <br>
+
+       <!-- sessão de cards do site -->
+      <!-- Linha 1: 4 cards -->
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/2d/94/0d/2d940ddf02d7ec48276f5b32d07cc35e.jpg class="card-img-top" alt="CFv">
+            <div class="card-body">
+              <h5 class="card-title">Frutas Vermelhas<span class="preco"> -R$ 85,00</span></h5>
+              <p class="card-text">Com massa leve e amanteigada, revela no interior pedaços suculentos de frutas selecionadas, que trazem um toque levemente ácido e sofisticado. A cobertura suave complementa com equilíbrio e textura aveludada, finalizado com frutas frescas.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/60/8e/92/608e925524f768adf6093fca6ad95321.jpg class="card-img-top" alt="Td">
+            <div class="card-body">
+              <h5 class="card-title">Trufa Dourada <span class="preco"> -R$ 55,00</span></h5>
+              <p class="card-text">Envolta por uma fina camada de chocolate nobre, revela um recheio cremoso e aveludado de doce de leite artesanal.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src= https://i.pinimg.com/736x/34/75/82/347582f23218202458549970194afff0.jpg class="card-img-top" alt="Pc">
+            <div class="card-body">
+              <h5 class="card-title">Panqueca Cacau<span class="preco"> -R$ 60,00</span></h5>
+              <p class="card-text">Com massa macia e delicadamente dourada, é generosamente recheada e coberta com chocolate cremoso de alta qualidade. </p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src= https://i.pinimg.com/736x/89/8a/ce/898aceab3a19a98417244b1da22b2b3b.jpg class="card-img-top" alt="CC">
+            <div class="card-body">
+              <h5 class="card-title">Cookie Cacau<span class="preco"> -R$ 55,00</span></h5>
+              <p class="card-text">Crocante por fora e surpreendentemente macio por dentro, revela um recheio cremoso de chocolate que derrete a cada mordida. Feito com ingredientes selecionados, combina o sabor intenso do cacau com a textura amanteigada da massa.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha 2: mais 4 cards -->
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/45/e5/16/45e5167bebb2721ef2b715ceb5951578.jpg" class="card-img-top" alt="Cn">
+            <div class="card-body">
+              <h5 class="card-title">Gotas de Cacau<span class="preco"> -R$ 40,00</span></h5>
+              <p class="card-text">Delicadamente preparado, nosso cookie Gotas de Cacau traz a combinação perfeita entre crocância e sabor. A massa amanteigada, assada com maestria, é generosamente pontilhada por gotas de chocolate puro.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/e4/38/70/e43870e4dac00cc716c55c96ff5a6593.jpg class="card-img-top" alt="Bc">
+            <div class="card-body">
+              <h5 class="card-title">Brownie Ébano<span class="preco"> -R$ 50,00</span></h5>
+              <p class="card-text">Com textura densa e úmida, derrete na boca, revelando camadas ricas e profundas de chocolate selecionado.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/61/2c/51/612c5180f047d1f95c35a08d59814250.jpg class="card-img-top" alt="Bv">
+            <div class="card-body">
+              <h5 class="card-title">Velvet Brownie<span class="preco"> -R$ 55,00</span></h5>
+              <p class="card-text">Nosso Brownie Red Velvet surpreende com seu sabor delicado, onde notas suaves de cacau se entrelaçam ao toque sutil de baunilha e um leve toque ácido do buttermilk.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src=https://i.pinimg.com/736x/41/43/da/4143daaccc21383dc132184a4b9d1cde.jpg class="card-img-top" alt="Tm">
+            <div class="card-body">
+              <h5 class="card-title">Maçã Real<span class="preco"> -R$ 160,00</span></h5>
+              <p class="card-text">A massa crocante e delicada envolve um recheio generoso de maçãs selecionadas, caramelizadas na medida certa e realçadas por especiarias suaves.</p>
+            </div>
+            <div class="card-footer">
+              <a href="carrinho.html" class="btn btn-carrinho">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</section>
+    <section class="py-5">
+  <div id="testimonialCarousel" class="carousel slide carousel-dark text-center" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img class="rounded-circle shadow mb-4" src="img/Imagem do WhatsApp de 2025-06-12 à(s) 21.41.43_23e31f13.jpg" alt="Maria" style="width: 120px;" />
+        <h5 class="mb-1">Maria Luiza</h5>
+        <p class="mb-2 text-muted">Sempre compro a torta de cereja, é deliciosa! Atendimento rápido e produtos sempre frescos.</p>
+      </div>
+
+      <div class="carousel-item">
+        <img class="rounded-circle shadow mb-4" src="img/Imagem do WhatsApp de 2025-06-12 à(s) 21.08.59_a86a9da8.jpg" alt="Mikael" style="width: 100px;" />
+        <h5 class="mb-1">Mikael Vieira</h5>
+        <p class="mb-2 text-muted">Os cupcakes são incríveis e o atendimento é sempre excelente. Sempre com muitas variedades!</p>
+      </div>
+
+      <div class="carousel-item">
+        <img class="rounded-circle shadow mb-4" src="img/Imagem do WhatsApp de 2025-06-12 à(s) 21.19.56_4ca55084.jpg" alt="Pamella" style="width: 100px;" />
+        <h5 class="mb-1">Pâmella Nunes</h5>
+        <p class="mb-2 text-muted">Os bolos são sempre fresquinhos e deliciosos. Atendimento rápido e atencioso.</p>
+      </div>
+
+    </div>
+
+    <!-- Botões -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
+    
+    
+</section>
+
+
+  </main>
+
+
+
+    <footer class="bg-dark text-center text-lg-start text-white">
+      <div class="container p-4">
+        <div class="row">
+          <!-- Sobre -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Sobre nós</h5>
+            <p>
+              Somos uma empresa dedicada a oferecer os melhores produtos e serviços para nossos clientes, sempre com
+              qualidade e compromisso.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!" class="text-white">Home</a></li>
+              <li><a href="#!" class="text-white">Produtos</a></li>
+              <li><a href="#!" class="text-white">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Contato -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 id="contact">Contato</h5>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-geo-alt"></i> Rua Esplanada da Silva, 123, Alegre</li>
+              <li><i class="bi bi-telephone"></i> (28) 9934-5678</li>
+              <li><i class="bi bi-envelope"></i> doce.encanto@gmail.com</li>
+            </ul>
+          </div>
+
+          <!-- Redes Sociais -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Siga-nos</h5>
+            <div class="mt-3">
+              <a href="#" class="text-white me-4">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="text-white me-4">
+                <i class="bi bi-instagram">Instragam</i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center p-3 bg-secondary">
+        © 2025 Todos os direitos reservados:
+        <a class="text-white" href="#">Doce Encanto</a>
+      </div>
+
+    </footer>
+
+
+
+  
+  <script src="js/bootstrap.bundle.js">
+  </script>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script>
+  // Quando o DOM estiver carregado
+  document.addEventListener('DOMContentLoaded', function () {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Verifica se há um tema salvo no localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+    }
+
+    // Evento de clique no botão
+    themeToggle.addEventListener('click', function () {
+      body.classList.toggle('dark');
+
+      // Salva o tema escolhido
+      if (body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  });
+  </script>
+
+
+
+
+</body>
+
+</html>
