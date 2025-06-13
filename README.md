@@ -108,4 +108,4 @@ Utilizamos javascript no carrinho para calcular as compras, na página de compra
 
 ## 👩‍💻 Autores
 
-Projeto desenvolvido por Maria Luiza Ramos Caliman, Pâmella da Silva Nunes Batista e Mikael Vieira Casoti,estudantes de Análise e Desenvolvimento de Sistemas.
+Projeto desenvolvido por Maria Luiza Ramos Caliman, Pâmella da Silva Nunes Batista e Mikael Vieira Casoti, estudantes de Análise e Desenvolvimento de Sistemas no IFES - Campus Alegre.
